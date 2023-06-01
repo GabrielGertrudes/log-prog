@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 02</title>
+    <script language="javascript" type="text/javascript">
+        function mostarSituacao(){
+            var display = document.getElementById("display");
+            var cores = ["Azul", "Verde", "Vermelho", "Rosa", "Roxo", "Amarelo", "Branco", "Preto"];
+            var mensagem = "";
+
+            for (i = 9; i >= 0; i--){
+                mensagem += cores[i] + "<br/>";
+                }
+                display.innerHTML = mensagem
+            }
+    </script>
+</head>
+<body>
+    <input type="button" value="Mostrar" onclick="mostarSituacao()" />
+    <br>
+    <p id="display"><i>Situação</i></p>
+</body>
+</html> 

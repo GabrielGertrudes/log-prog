@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 01</title>
+    <script language="javascript" type="text/javascript">
+        function mostarSituacao(){
+            var display = document.getElementById("display");
+            var posicao = 0;
+            var maior = -1000;
+            var numeros = [15, 65, 34, 13, 23, 77, 68, 97, 90, 69];
+            for (i = 0; i < numeros.length; i++){
+                if(numeros[i] > maior){
+                    maior = numeros[i];
+                    posicao = i;
+                }
+            }
+            display.innerHTML = "A posição do maior números é " + posicao + " e o número é " + numeros[posicao]
+        }
+    </script>
+    <br>
+</head>
+<body>
+    <input type="button" value="Mostrar" onclick="mostarSituacao()" />
+    <br>
+    <p id="display"><i>Situação</i></p>
+</body>
+</html>
